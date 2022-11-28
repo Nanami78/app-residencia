@@ -1,0 +1,36 @@
+const Stack = createNativeStackNavigator();
+
+  const App =() =>{
+    return (
+      <DataProvider>
+      <NavigationContainer>
+        <Stack.Navigator initialRouteName="Login">
+        <Stack.Screen name="BottomNavigator" component={BottomNavigator} />
+          <Stack.Screen name = "Login" component ={Login}
+          options={{title:"Login" , headerStyle:{backgroundColor: '#54b695'}
+           }} />
+         <Stack.Screen name="BottomNavigatorScreen" component={BottomNavigator} 
+          options={{title:"Home" , headerStyle:{backgroundColor: '#54b695'}
+        }} />
+        <Stack.Screen name="HomeEditora" component={HomeEditora} />
+        </Stack.Navigator>
+      </NavigationContainer>S
+
+</DataProvider>
+app leauth colorido.
+
+
+catch(error){
+      Alert.alert(
+      "Usuario nao encontrado",
+      "tente novamente",
+      [
+        {
+          text: "Cadastrar",
+          onPress: () => console.log("cadastrado pressionado"),
+          style: "cancel"
+        },
+        { text: "tentar novamente", onPress: () => console.log("tente outra vez") }
+      ]
+    );
+    index login alerta.
